@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loldeon"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karate"
+        android:text="LolDeon"
+        android:textColor="@color/rojo"
+        android:textSize="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/imagen_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        />
+
+    <View
+        android:id="@+id/fondorojo"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        app:layout_constraintTop_toBottomOf="@id/imagen_logo"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/rounded_background"
+        android:alpha="0.75"
+        />
+
+    <EditText
+        android:id="@+id/NombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="75dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:hint="Nombre de usuario"
+        android:textSize="30dp"
+        android:fontFamily="@font/seagramtfb"
+        app:layout_constraintStart_toStartOf="@id/imagen_logo"
+        app:layout_constraintTop_toBottomOf="@id/imagen_logo" />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:hint="Contraseña"
+        android:textSize="30dp"
+        android:fontFamily="@font/seagramtfb"
+        app:layout_constraintStart_toStartOf="@id/NombreUsuario"
+        app:layout_constraintTop_toBottomOf="@id/NombreUsuario"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textSize="40dp"
+        android:backgroundTint="@color/rojo"
+        android:alpha="0.85"
+        android:fontFamily="@font/seagramtfb"
+        app:layout_constraintStart_toStartOf="@id/titulo"
+        app:layout_constraintTop_toBottomOf="@id/fondorojo"
+        android:imeActionId="@integer/material_motion_duration_long_2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
