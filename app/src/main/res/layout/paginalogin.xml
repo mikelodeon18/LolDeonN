@@ -54,6 +54,7 @@
         android:backgroundTint="@color/white"
         android:hint="Nombre de usuario"
         android:textSize="30dp"
+        android:textColor="@color/white"
         android:fontFamily="@font/seagramtfb"
         app:layout_constraintStart_toStartOf="@id/imagen_logo"
         app:layout_constraintTop_toBottomOf="@id/imagen_logo" />
@@ -67,6 +68,7 @@
         android:layout_marginLeft="20dp"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"
+        android:textColor="@color/white"
         android:hint="Contraseña"
         android:textSize="30dp"
         android:fontFamily="@font/seagramtfb"
@@ -88,6 +90,7 @@
         app:layout_constraintStart_toStartOf="@id/titulo"
         app:layout_constraintTop_toBottomOf="@id/fondorojo"
         android:imeActionId="@integer/material_motion_duration_long_2"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
